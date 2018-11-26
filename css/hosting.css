@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #cbcbcb;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #e0e0e0;
+    font-size: 20px;
+}
+.price .lgrey{
+    background-color: #eee;
+    font-size: 20px;
+}
+
+
+    /* The "Sign Up" button */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+.price .bronze-header {
+    background-color: #CD7F32;
+    color: white;
+    font-size: 25px;
+    border-radius:15px 15px 0px 0px;
+    outline:none;
+}
+.price .silver-header {
+    background: #C0C0C0;
+    color: white;
+    font-size: 25px;
+    border-radius:15px 15px 0px 0px;
+    outline:none;
+}
+.price .gold-header {
+    background: #FFD700;
+    color: white;
+    font-size: 25px;
+    border-radius:15px 15px 0px 0px;
+    outline:none;
+}

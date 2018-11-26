@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header"></div>
+
+<div class="topnav" id="myTopnav"><!--Menubalk-->
+    <a href="index.html" class="active">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Hosting<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a href="hosting.html">Hosting Pakketten</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Cloud<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a href="cloud.html">Cloud Pakketten</a>
+        </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+
+    <a href="klanten.html">Klanten</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Social Media<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a href="socialmedia.html">Twitter Feed</a>
+        </div>
+    </div>
+
+    <a href="media.html">Media</a>
+
+    <a class="dgreen" style="float:right;" href="about.html">Over ons</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+    <a style="float:right" href="https://facebook.com" class="fa fa-facebook"></a>
+    <a style="float:right" href="https://twitter.com" class="fa fa-twitter"></a>
+
+</div>
+
+</body>
+</html>
