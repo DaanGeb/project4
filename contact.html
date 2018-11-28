@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+
+
+
+
 </head>
 <body>
 
@@ -31,22 +37,63 @@
 
     <a href="klanten.html">Klanten</a>
 
-    <div class="dropdown">
-        <button class="dropbtn">Social Media<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-            <a href="socialmedia.html">Twitter Feed</a>
-        </div>
-    </div>
-
-    <a href="media.html">Media</a>
-
     <a class="dgreen" style="float:right;" href="about.html">Over ons</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
     <a style="float:right" href="https://facebook.com" class="fa fa-facebook"></a>
     <a style="float:right" href="https://twitter.com" class="fa fa-twitter"></a>
 
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var myTopnav = document.getElementById("myTopnav");
+        var sticky = myTopnav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                myTopnav.classList.add("sticky");
+            } else {
+                myTopnav.classList.remove("sticky");
+            }
+
+        }
+    </script>
+
 </div>
+
+
+<div class="content">
+<div class="container">
+<div style="text-align:center">
+    <h2>Neem contact met ons op</h2>
+    <p>Kom langs voor een kopje koffie, of laat een bericht achter:</p>
+</div>
+<div class="row">
+    <div class="column">
+        <img url="/https://www.w3schools.com/w3images/map.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <form action="/action_page.php">
+            <label for="fname">Naam</label>
+            <input type="text" id="fname" name="firstname" placeholder="Je naam..">
+            <label for="lname">Achternaam</label>
+            <input type="text" id="lname" name="lastname" placeholder="Je achternaam..">
+            <label for="country">Land</label>
+            <select id="country" name="country">
+                <option value="australia">Nederland</option>
+                <option value="canada">België</option>
+            </select>
+            <label for="subject">Onderwerp</label>
+            <textarea id="subject" name="subject" placeholder="Schrijf iets.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+
+
 
 </body>
 </html>

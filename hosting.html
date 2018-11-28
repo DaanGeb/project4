@@ -5,6 +5,7 @@
     <title>Title</title>
         <link href="css/hosting.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -39,13 +40,28 @@
         </div>
     </div>
 
-    <a href="media.html">Media</a>
 
     <a class="dgreen" style="float:right;" href="about.html">Over ons</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
     <a style="float:right" href="https://facebook.com" class="fa fa-facebook"></a>
     <a style="float:right" href="https://twitter.com" class="fa fa-twitter"></a>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var myTopnav = document.getElementById("myTopnav");
+        var sticky = myTopnav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                myTopnav.classList.add("sticky");
+            } else {
+                myTopnav.classList.remove("sticky");
+            }
+
+        }
+    </script>
 
 </div>
 
@@ -66,7 +82,7 @@
         <li class="silver-header">Silver</li>
         <li class="grey">€ 7,95 / maand</li>
         <li class="lgrey">20GB HDD</li>
-        <li class="lgrey">1048MB RAM</li>
+        <li class="lgrey">1024MB RAM</li>
         <li class="lgrey">2 Cores</li>
         <li class="lgrey">200GB dataverkeer per maand</li>
         <li class="grey"><a href="#" class="button">Bestel nu</a></li>

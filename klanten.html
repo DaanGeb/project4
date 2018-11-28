@@ -31,14 +31,7 @@
 
     <a href="klanten.html">Klanten</a>
 
-    <div class="dropdown">
-        <button class="dropbtn">Social Media<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-            <a href="socialmedia.html">Twitter Feed</a>
-        </div>
-    </div>
 
-    <a href="media.html">Media</a>
 
     <a class="dgreen" style="float:right;" href="about.html">Over ons</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -46,7 +39,51 @@
     <a style="float:right" href="https://facebook.com" class="fa fa-facebook"></a>
     <a style="float:right" href="https://twitter.com" class="fa fa-twitter"></a>
 
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var myTopnav = document.getElementById("myTopnav");
+        var sticky = myTopnav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                myTopnav.classList.add("sticky");
+            } else {
+                myTopnav.classList.remove("sticky");
+            }
+
+        }
+    </script>
+
 </div>
+
+<table style="width:100%">
+    <tr>
+        <th>Naam</th>
+        <th>Pakket</th>
+        <th>Land</th>
+    </tr>
+    <tr>
+        <td>Arie Boer</td>
+        <td>Hosting - Goud</td>
+        <td>Nederland</td>
+    </tr>
+    <tr>
+        <td>Remco Willemsen</td>
+        <td>Hosting - Brons</td>
+        <td>Nederland</td>
+    </tr>
+    <tr>
+        <td>Jan Peter Balkenende</td>
+        <td>Cloud - Groen</td>
+        <td>Nederland</td>
+    </tr>
+    <tr>
+        <td>Youri Jansen</td>
+        <td>Hosting - Silver</td>
+        <td>België</td>
+    </tr>
+</table>
 
 </body>
 </html>

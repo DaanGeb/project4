@@ -21,7 +21,8 @@
 
 /* Add shadows on hover */
 .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    box-shadow: 5px 8px 12px 5px;
+    border-radius:15px 15px 0 0;
 }
 
 /* Pricing header */
@@ -85,6 +86,27 @@
     background: #FFD700;
     color: white;
     font-size: 25px;
+    border-radius:15px 15px 0px 0px;
+    outline:none;
+}
+.price .yellow-header {
+    background-color: yellow;
+    color:white;
+    font-size:25px;
+    border-radius:15px 15px 0px 0px;
+    outline:none;
+}
+.price .orange-header {
+    background-color: orange;
+    color:white;
+    font-size:25px;
+    border-radius:15px 15px 0px 0px;
+    outline:none;
+}
+.price .green-header  {
+    background-color: green;
+    color:white;
+    font-size:25px;
     border-radius:15px 15px 0px 0px;
     outline:none;
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cloud Pakketten</title>
+    <link href="css/hosting.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -31,22 +32,76 @@
 
     <a href="klanten.html">Klanten</a>
 
-    <div class="dropdown">
-        <button class="dropbtn">Social Media<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-            <a href="socialmedia.html">Twitter Feed</a>
-        </div>
-    </div>
-
-    <a href="media.html">Media</a>
-
     <a class="dgreen" style="float:right;" href="about.html">Over ons</a>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
     <a style="float:right" href="https://facebook.com" class="fa fa-facebook"></a>
     <a style="float:right" href="https://twitter.com" class="fa fa-twitter"></a>
 
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var myTopnav = document.getElementById("myTopnav");
+        var sticky = myTopnav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                myTopnav.classList.add("sticky");
+            } else {
+                myTopnav.classList.remove("sticky");
+            }
+
+        }
+    </script>
+
 </div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var myTopnav = document.getElementById("myTopnav");
+    var sticky = myTopnav.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            myTopnav.classList.add("sticky")
+        } else {
+            myTopnav.classList.remove("sticky");
+        }
+    }
+</script>
+
+
+<div class="columns">
+    <ul class="price">
+        <li class="yellow-header">Geel</li>
+        <li class="grey">€ 4 / maand</li>
+        <li class="lgrey">10GB Opslag</li>
+        <li class="grey"><a href="#" class="button">Bestel nu</a></li>
+    </ul>
+</div>
+
+<div class="columns">
+    <ul class="price">
+        <li class="orange-header">Oranje</li>
+        <li class="grey">€ 6 / maand</li>
+        <li class="lgrey">100GB Opslag</li>
+        <li class="grey"><a href="#" class="button">Bestel nu</a></li>
+    </ul>
+</div>
+
+<div class="columns">
+    <ul class="price">
+        <li class="green-header">Groen</li>
+        <li class="grey">€ 10 / maand</li>
+        <li class="lgrey">1TB HDD</li>
+        <li class="grey"><a href="#" class="button">Bestel nu</a></li>
+    </ul>
+</div>
+
+
+
+
 
 </body>
 </html>

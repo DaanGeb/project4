@@ -2,10 +2,11 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/contact.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<div>
 
   <div class="header"></div>
 
@@ -30,36 +31,58 @@
 
     <a href="klanten.html">Klanten</a>
 
-    <div class="dropdown">
-        <button class="dropbtn">Social Media<i class="fa fa-caret-down"></i></button>
-        <div class="dropdown-content">
-            <a href="socialmedia.html">Twitter Feed</a>
-        </div>
-    </div>
 
-    <a href="media.html">Media</a>
+
 
     <a class="dgreen" style="float:right;" href="about.html">Over ons</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 
     <a style="float:right" href="https://facebook.com" class="fa fa-facebook"></a>
     <a style="float:right" href="https://twitter.com" class="fa fa-twitter"></a>
 
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var myTopnav = document.getElementById("myTopnav");
+        var sticky = myTopnav.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                myTopnav.classList.add("sticky");
+            } else {
+                myTopnav.classList.remove("sticky");
+            }
+
+        }
+    </script>
+
 </div>
 
-  <script>
-  function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-          x.className += " responsive";
-      } else {
-          x.className = "topnav";
-      }
-  }
   </script>
+<div class="feed">
+  <aside><a max-width="1300px" class="twitter-timeline" href="https://twitter.com/ColicssHosting?ref_src=twsrc%5Etfw">Tweets by ColicssHosting</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><aside>
+</div>
+  <div class="align">
+<div class="content">
+    <div class="container">
+        <div style="text-align:center">
+            <h2 style="font-size:40px">Algemene informatie over het bedrijf:</h2>
+    <article class="left">
+        Colicss is een innovatief en vernieuwend bedrijf uit
+        Slagharen dat zich vooral bezighoudt met hosting en sinds kort ook de cloud.<br>
+        Het bedrijf gaat onder leiding van Rob Sieljes al een poos flink voor de wind en zijn binnen twee jaar
+        gegroeid van een eenmanszaak naar een bedrijf met zes man personeel.
+    </article>
+    <br>
+    <article class="left">
+        Onlangs hebben ze nog een prijs gewonnen voor beste innovatie binnen de hosting door samen te werken met het Alfa-college.<br>
+        In dit project hebben studenten van het Alfa-college een hostingomgeving opgezet met daarop een testwebsite.<br>
+        Het panel van deze prijs vond de samenwerking zo gaaf, dat ze de prijs beste innovatie hebben gewonnen.
+    </article>
+        </div>
+    </div>
+</div>
+</div>
+
 
 </body>
-
-
-
 </html>
