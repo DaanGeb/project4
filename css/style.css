@@ -5,31 +5,32 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: black;
-  width:100%;
-  margin-left:0;
-  top:123px;
+    overflow: hidden;
+    background-color: black;
+    width:100%;
+    margin-left:0;
+    /*! top:123px; */
     z-index: 1;
+    position: relative;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .active {
-  background-color: darkgreen;
-  color: white;
+    background-color: darkgreen;
+    color: white;
 }
 
 .topnav .icon {
-  display: none;
+    display: none;
 }
 
 .dropdown {
@@ -38,7 +39,7 @@ body {
 }
 
 .dropdown .dropbtn {
-    font-size: 17px;    
+    font-size: 17px;
     border: none;
     outline: none;
     color: white;
@@ -50,7 +51,7 @@ body {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -71,8 +72,8 @@ body {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+    background-color: #555;
+    color: white;
 }
 
 .dropdown-content a:hover {
@@ -85,44 +86,47 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
 
 .header {
-overflow: hidden;
-top: 0;
-height: 123px;
-width: 100%;
-background-image: url("collicsgradient.png");
-z-index: 4;
-left:0;
+    overflow: hidden;
+    top: 0;
+    height: 123px;
+    width: 100%;
+    background-image: url("collicsgradient.jpg");
+    z-index: 4;
+    left:0;
+    text-align:center;
+    line-height:123px;
+    font-size:45px;
 }
 .dgreen {
     background-color: darkgreen;
@@ -145,14 +149,13 @@ left:0;
 }
 .feed{
     float:right;
-    margin-left: 1219px;
-    max-width: 900px;
+    width:19%;
 }
 .align{
-    float:left;
-    margin-left: 100px;
-    margin-right: 600px;
-    margin-top:-950px;
+    width: 80%;
+    display:inline-block;
+    text-align:center;
+
 }
 .h2{
     font-size: 40px;
@@ -171,4 +174,42 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+.hometext {
+    width:80%;
+    display:block;
+}
+.twitter{
+    width:19%;
+    display:inline-block;
+    float:right;
+    min-width:250px;
+}
+@media screen and (max-width: 1260px;) {
+    .hometext {
+        width: 75%;
+    }
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
